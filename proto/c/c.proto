@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "proto/b/b.proto";
+
+package c;
+
+option java_multiple_files = true;
+option java_generic_services = false;
+option java_package = "com.promiseofcake.proto.c";
+option java_outer_classname = "CProtos";
+
+message C {
+    string id = 1;
+    b.B message_b = 2;
+}
