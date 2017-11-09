@@ -3,6 +3,6 @@ java_binary(
     srcs = ["Sample.java"],
     main_class = "com.promiseofcake.sample.Sample",
     deps = [
-        "//proto:a",
+        "//proto:c",
     ],
 )

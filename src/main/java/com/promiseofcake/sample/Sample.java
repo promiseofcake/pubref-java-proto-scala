@@ -1,14 +1,14 @@
 package com.promiseofcake.sample;
 
-import com.promiseofcake.proto.a.A;
+import com.promiseofcake.proto.c.C;
 
 class Sample {
-    private static A generateA() {
-        return A.newBuilder().setId("foo").build();
+    private static C generateC() {
+        return C.newBuilder().setId("c").build();
     }
 
     public static void main(String[] args) {
-        A a = generateA();
-        System.out.println(a.getId());
+        C c = generateC();
+        System.out.println(c.getMessageB().getMessageA().getId());
     }
 }
